@@ -1,0 +1,262 @@
+body {
+    background-color: #f0f0f0; /* COR DO FUNDO DA PÁGINA */
+    font-family: Arial, Helvetica, sans-serif; /* FONTES PARA CASO O PC NÃO TENHA ALGUMA DA OPÇÃO*/
+    font-size: 18px; /* TAMANHO DAS LETRAS DO TEXTO */
+    color: #454141; /* COR DAS LETRAS */
+    line-height: 1.5; /* ESPAÇO DAS LINHAS P/ FICAR SEPARADO OU JUNTO*/
+    
+    
+}
+header {
+    background-color: #ffffff; /* COR DO FUNDO / PARTE DO TÍTULO */
+    padding: 5px; /* MANTER O ESPAÇO DO CABEÇALHO E O TÍTULO */
+    text-align: center; /* COLOCAR O TÍTULO NO CENTRO */
+}
+
+header h1 {
+    color: #2E7D32; /* COR DO H1 (TÍTULO) */
+    margin-bottom: 5px; /*MANTER O ESPAÇO DO TÍTULO E CABEÇALHO)*/
+}
+
+/* --- CONFIGURAÇÃO DA BARRA VERDE --- */
+nav {
+    background-color: #4CAF50;
+    padding: 15px;
+    display: flex;             /* Necessário para alinhar os itens */
+    justify-content: center;   /* Centraliza os links no meio da barra */
+    position: sticky;          /* Trava o menu no ecrã */
+    top: 0;                    /* Cola exatamente no limite superior */
+    z-index: 1000;             /* Mantém o menu por cima de tudo */
+    margin: 0;                 /* Remove margens indesejadas */
+}
+
+/* --- CONFIGURAÇÃO DAS LETRAS (LINKS) --- */
+nav a {
+    color: #ffffff;            /* Letras brancas */
+    text-decoration: none;     /* Tira o sublinhado */
+    margin: 0 15px;            /* Dá o espaço correto entre cada palavra */
+    font-weight: bold;         /* Coloca as letras a negrito */
+    font-size: 16px;           /* Tamanho da letra */
+    font-family: Arial, sans-serif;
+}
+
+/* --- EFEITO AO PASSAR O RATO --- */
+nav a:hover {
+    color: #e8f5e9;            /* Fica um verde muito clarinho */
+}
+
+.apresentacao {
+    background-color: #ffffff; 
+    padding: 30px 5%; /* 40px em cima/baixo e 20% de espaço nas laterais */
+    margin-bottom: 10px; 
+}
+
+.projeto {
+    background-color: #e8f5e9; 
+    padding: 30px 5%; 
+    margin-bottom: 10px; 
+}
+
+.tecnologia {
+    background-color: #e8f5e9; 
+    padding: 30px 5%; 
+    margin-bottom: 10px; 
+}    
+
+.bem-estar {
+    background-color: #ffffff; 
+    padding: 30px 5%; 
+    margin-bottom: 10px; 
+}
+
+h2 {
+    color: #2E7D32; /* COR DO TÍTULO */
+    margin-bottom: 15px;
+    border-bottom: 1px solid #cccccc; /* LINHA QUE SEPARA O TÍTULO DO TEXTO */
+    padding-bottom: 5px; 
+}
+
+h3 {
+    color: #388E3C; /* COR DOS SUBTÍTULOS */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px; /* Espaço depois de cada parágrafo */
+    text-align: justify; /* Faz o texto alinhar perfeitamente à esquerda e à direita */
+}
+
+ul {
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px; /* ESPAÇO ENTRE A LISTA */
+}
+
+
+/* Cria uma regra apenas para os parágrafos (<p>) que estão dentro do rodapé */
+footer p {
+    margin: 5px 0; 
+    font-size: 15px; 
+    color: #a39f9f; 
+    text-align: center; /* ADICIONE ISTO AQUI! */
+}
+/* 1. A CAIXA QUE VAI SEGURAR O FORMULÁRIO */
+.caixa-cadastro {
+    width: 400px; /* Define um tamanho fixo para o "cartão" */
+    margin: 50px auto; /* O segredo: 'auto' nas laterais centraliza a caixa no ecrã! */
+    padding: 30px; /* Espaço interno para não colar nas bordas */
+    background-color: #ffffff; /* Fundo branco para destacar do fundo cinza da página */
+    border-radius: 10px; /* Cantos arredondados na caixa */
+    text-align: left; /* Mantém os textos alinhados à esquerda dentro da caixa */
+}
+
+/* 2. Textos em cima das caixas */
+label {
+    font-weight: bold;
+    color: #2E7D32;
+}
+
+/* 3. As caixas de digitar */
+input {
+    width: 100%; /* Faz a caixa ocupar toda a largura da div */
+    box-sizing: border-box; /* Impede que a caixa vaze para fora da div */
+    padding: 10px; 
+    margin-top: 5px; 
+    margin-bottom: 15px; 
+    border: 1px solid #cccccc; 
+    border-radius: 5px; 
+    font-size: 16px;
+}
+
+/* 4. O botão */
+button {
+    background-color: #4CAF50;
+    color: white;
+    width: 100%; /* Faz o botão esticar de uma ponta à outra da caixa */
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2E7D32;
+}
+/* Ajusta o tamanho da imagem no cabeçalho */
+.logo-header {
+    max-width: 400px; /* Define uma largura máxima para a imagem */
+}
+.banner-final {
+    width: 100%;
+    overflow: hidden; /* Evita que a imagem crie barras de rolagem */
+    margin: 40px 0 0 0; /* Dá um espaço de 40px no topo (para descolar do conteúdo acima) e cola no rodapé embaixo */
+    background-color: #ffffff; /* Fundo branco caso a tela seja ultra-larga */
+    display: flex;
+    justify-content: center;
+}
+
+/* Força a imagem a se adaptar de ponta a ponta */
+.imagem-full {
+    width: 100%;
+    max-width: 1920px; /* Evita que a imagem distorça em monitores gigantescos */
+    height: auto; /* Mantém as proporções originais das ilustrações sem achatar */
+    display: block;
+}
+.novidades {
+    background-color: #ffffff; 
+    padding: 50px 5%; /* 40px em cima/baixo e 20% de espaço nas laterais */
+    margin-bottom: 10px; 
+}
+.btn-comprar {
+    display: inline-block; /* Fundamental para o link aceitar largura e altura como um botão */
+    background-color: #4CAF50; /* Cor de fundo verde bonita */
+    color: white; /* Cor do texto em branco */
+    padding: 12px 24px; /* Espaço interno para deixar o botão gordinho */
+    text-decoration: none; /* Remove o sublinhado azul padrão dos links */
+    font-weight: bold; /* Deixa o texto em negrito */
+    border-radius: 6px; /* Arredonda os cantos do botão */
+    text-align: center; /* Centraliza o texto */
+    transition: 0.3s; /* Deixa a mudança de cor suave ao passar o rato */
+}
+
+/* Efeito extra: Quando o utilizador passa o rato por cima, o botão fica ligeiramente mais escuro */
+.btn-comprar:hover {
+    background-color: #388E3C;
+}
+/* --- ESTILOS DA PÁGINA DE INTEGRANTES --- */
+
+.secao-equipe {     /* PARTE DA PÁGINA DOS INTEGRANTES */
+    background-color: #eaf4e8;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.secao-equipe h2 {
+    color: #2e7d32;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.container-integrantes {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 30px; 
+    margin-top: 40px;
+}
+
+.cartao-integrante {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 220px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+.cartao-integrante img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Deixa a foto perfeitamente redonda */
+    object-fit: cover; 
+    margin-bottom: 15px;
+    border: 3px solid #4CAF50; 
+}
+
+.cartao-integrante h3 {
+    margin: 0;
+    color: #2e7d32;
+}
+
+.cartao-integrante p {
+    margin: 10px 0 0 0;
+    color: #555;
+    font-weight: bold;
+}
+/* Zerando as margens padrões que o navegador coloca na página inteira */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove qualquer espaçamento que o topo ou o banner possam ter */
+header, .banner-final {
+    margin: 0;
+    padding: 0;
+    display: block;
+    line-height: 0; /* Ajuda a eliminar pequenas frestas em alguns navegadores */
+    border: none;
+}
+
+/* Garante que a imagem ocupe toda a largura sem deixar sobras */
+.banner-final img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
